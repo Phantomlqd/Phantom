@@ -94,3 +94,63 @@
 - Đảm bảo sự tương thích về mặt công nghệ.
 - Thúc đẩy sự phát triển công nghệ mạng.
 - Đơn giản hóa việc dạy và học.
+
+#TCP/IP
+##I. Khái niệm
+- Là một mô hình mạng máy tính và bộ giao thức truyền thông sử dụng trên internet và các mạng máy tính độc lập.
+- Là bộ giao thức được sử dụng phổ biến nhất trên thế giới.
+- Được chia thành 4 tầng với chức năng và nhiệm vụ khác nhau.
+- Các tầng trên càng gần với người dùng hơn ngược lại là các tầng dưới càng gần với việc truyền dữ liệu và vật lí.
+
+##II. Các tầng trong mô hình TCP/IP
+![TCP/IP](http://www.cellbiol.com/bioinformatics_web_development/lib/exe/fetch.php/chapter_1_-_internet_networks_and_tcp-ip/tcp-ip_layers.png?cache=)
+
+###1. Network interface layer( tầng giao diện mạng)
+####1.1 Chức năng
+- Bao gồm cả 2 tầng vật lí và liên kết dữ liệu so với mô hình OSI.
+- Có nhiệm vụ chuyển các gói tin từ tầng mạng tới các máy chủ khác nhau.
+- Còn có thể là nơi các gói tin được chặn để gửi qua một mạng riêng ảo.
+- Là nơi kết hợp của các thành phần vật lí như: hub, các bộ lặp (repeater), cáp mạng, cáp quang, cáp đồng trục (coaxial cable), card mạng... các đặc tả mức thấp về các tín hiệu (mức hiệu điện thế, tần số, v.v..).
+
+###2. Internet layer( tầng internet)
+####2.1 Chức năng:
+- Có nhiệm vụ gửi các gói tin đến các mạng khác.
+- Gửi dữ liệu từ nguồn tới đích bằng chế độ định tuyến.
+- Định danh địa chỉ máy chủ và định danh.
+- Định tuyến các gói tin.
+
+###3. Transport layer( tầng giao vận)
+####3.1 Chức năng:
+- Đảm bảo độ tin cậy của gói tin.
+- Đảm bảo tính thứ tự của dữ liệu.
+- Sửa lỗi dữ liệu.
+- Các gói tin bị lỗi được gửi lại.
+- Giải quyết sự tắc nghẽn.
+
+###4. Application( tầng ứng dụng)
+####4.1 Chức năng:
+- Là nơi các ứng dụng mạng liên kết với nhau giữa các nút.
+- Trình bày, biểu diễn thông tin đến người dùng.
+- Mã hóa, giải mã, điều khiển hội thoại.
+
+####4.2 Các giao thức:
+#####4.2.1 FTP (File Transfer Protocol):
+- Là dịch vụ tạo cầu nối tin cậy.
+- Sử dụng giao thức TCP để truyền các tập tin.
+- Hỗ trợ truyền file nhị phân.
+
+#####4.2.2 FTP (Trivial File Transfer Protocol):
+- Khác với FTP là một dịch vụ không tạo cầu nối sử dụng giao thức UDP.
+- DÙng trên router để truyền các file cấu hình.
+
+#####4.2.3 SMTP (Simple Mail Transfer Protocol):
+- SMTP quản lý hoạt động truyền e-mail qua mạng máy tính.
+
+#####4.2.4 Telnet (Terminal emulation):
+- Cung cấp khả năng truy cập từ xa vào một thiết bị đầu cuối khác. Cho phép người khác đăng nhập và thực thi các lệnh từ xa.
+
+#####4.2.5 SNMP (Simple Network Management Protocol):
+- Là một giao thức cung cấp một phương pháp để giám sát và điều khiển các thiết bị mạng và để quản lý các cấu hình, thu thập thống kê, hiệu suất và bảo mật.
+
+#####4.2.6 DNS (Domain name system):
+- Là một giao thức phân giải tên miền từ dạng số sang dạng chữ La-tinh.  
