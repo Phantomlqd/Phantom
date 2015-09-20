@@ -5,7 +5,7 @@
 - Nhiệm vụ của nó là đảm bảo khả năng tương tác và liên kết của các hệ thống truyền thông nó cấu trúc khác nhau bằng các giao thức tiêu chuẩn.
 - Được xây dựng dựa trên cấu trúc phân tầng với 7 tầng liên kết với nhau có chức năng và nhiệm vụ khác nhau.
 
-##II. Các tầng trong mô hình OSS
+##II. Các tầng trong mô hình OSI
 ![image](https://upload.wikimedia.org/wikipedia/commons/d/d3/Osi-model-jb.png)
 ###1. Physical layer (tầng vật lí)
 ####1.1 Chức năng:
