@@ -6,6 +6,7 @@
 - Được xây dựng dựa trên cấu trúc phân tầng với 7 tầng liên kết với nhau có chức năng và nhiệm vụ khác nhau.
 
 ##II. Các tầng trong mô hình OSS
+![image](https://upload.wikimedia.org/wikipedia/commons/d/d3/Osi-model-jb.png)
 ###1. Physical layer (tầng vật lí)
 ####1.1 Chức năng:
 - Truyền nhận các dòng bit thô qua môi trường vật lí.
