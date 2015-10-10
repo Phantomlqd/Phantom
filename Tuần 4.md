@@ -153,5 +153,37 @@ Nếu dùng dhcp thì thay static bằng dhcp và xóa các thông số bên dư
 Sau khởi động lại mạng 
 ![](https://cloud.githubusercontent.com/assets/14356333/10410299/0e1fc422-6f68-11e5-8da2-250ca4ec2990.jpg)
 
+#Lập trình bash
+Trong những ngày đầu, máy tính chỉ hiểu được ngôn ngữ nhị phân, đó là điều khó khăn đối với người dùng và cả những nhà phát triển.
+Theo nhu cầu đó,một chương trình đặc biệt ra đời, nó được gọi là Shell. Shell chấp nhận các câu lệnh tiếng Anh, theo một cú pháp cho trước và chuyển nó đển Kernel để xử lý tiếp, sau đó trả lại kết quả cho người dùng.
+Shell là chương trình để tương tác giữa người dùng và máy tính. Thông dịch các lệnh của người dùng nhập vào hoặc từ các file.
+Shell không phải là một phần của hạt nhân hệ thống, nhưng nó dùng hạn nhân để thực thi các chương trình, tạo ra các tập tin…
 
+**Các loại Shell Script:**
+Một số Shell có sẵn trên Linux:
 
+- BASH ( Bourne-Again SHell ) phát triển bởi Brian Fox và Chet Ramey. Đây là Shell thông dụng nhất trên Linux.
+
+- CSH (C SHell) phát triển bởi Bill Joy tại University of California (dành cho BSD). Sử dụng cấu trúc lệnh giống C, rất thân thiện cho các lập trình viên C trên linux.
+
+- KSH (Korn SHell) phát triển bởi David Korn tại AT & T Bell Labs.
+
+- TCSH chúng ta có thể gọ lệnh #man tcsh để xem thông tin.
+
+Để xem hệ thống của chúng ta hỗ trợ những loại shell nào, có thể dùng lệnh #cat /etc/shells. Mỗi loại shell có cú pháp, cách dùng khác nhau, cung cấp cho chúng ta các chức năng khác nhau.
+Trong MS-DOS, Shell là được cọi là COMMAND.COM, cũng được sử dụng cho mục đích tương tự, nhưng không mạnh mẽ bằng Shell Linux.
+Tất cả các loại Shell phía trên đều đọc các lệnh người dùng nhập và đưa đến Linux OS để nói với OS rằng người dùng đang muốn gì. Các dòng lệnh được gọi là command line.
+Để xem system đang chạy shell gì, chúng ta có thể dùng lệnh #echo $SHELL.
+
+##Bài tập cơ bản: xuất ra dòng chữ hello world
+Đầu tiên ta tạo 1 file kma.sh
+![](https://cloud.githubusercontent.com/assets/14356333/10410411/44fe29c2-6f6b-11e5-90fc-8e0ecf100185.jpg)
+
+Dòng đầu tiên" #!/bin/bash" là cú pháp bắt buộc. Dòng thứ 2 gán chuỗi "hello world" cho biến hello. Dòng thứ 3 bằng lệnh echo ta xuất ra màn hình biến hello.
+![](https://cloud.githubusercontent.com/assets/14356333/10410426/ae7b6ac2-6f6b-11e5-9f0c-be1a0d6200de.jpg)
+
+Cấp quyền thực thi cho file kma.sh bằng lệnh chmod
+![](https://cloud.githubusercontent.com/assets/14356333/10410436/11c3d808-6f6c-11e5-8506-a69f93027f2a.jpg)
+
+Sau đó dùng lệnh ./tên file để chạy file.
+![](https://cloud.githubusercontent.com/assets/14356333/10410450/4c946556-6f6c-11e5-9668-565a5ccfae52.jpg)
