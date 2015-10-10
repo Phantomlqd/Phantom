@@ -147,6 +147,7 @@ Cũng giống như upgrade nhưng dist-upgrade cung cấp thêm hệ thống s�
 ![](https://cloud.githubusercontent.com/assets/14356333/10410265/48992d84-6f66-11e5-9c98-8fefea709307.jpg)
 
 Tiếp theo, cấu hình cho 2 card mạng eth0 và eth1 cùng một dải ip 192.168.1.0 ta gõ vào các thông số tương ứng address, network, netmask, broadcast, gateway.
+Nếu dùng dhcp thì thay static bằng dhcp và xóa các thông số bên dưới.
 ![](https://cloud.githubusercontent.com/assets/14356333/10410280/2009b55e-6f67-11e5-9c2a-5f58140f10e1.jpg)
 
 Sau khởi động lại mạng 
