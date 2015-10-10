@@ -141,3 +141,16 @@ Cài đặt phiên bản mới hơn của gói cài đặt đang có( sau khi đ
 
 ##3. Upgrade:
 Cũng giống như upgrade nhưng dist-upgrade cung cấp thêm hệ thống sửa lỗi xung đột giữa các gói cài đặt. Có nghĩa là nếu như chúng ta dùng upgrade thì sẽ có khả năng các gói cài đặt bị xung độ, lúc đó ta sẽ sử dụng dist-upgrade để xử lí các gói cài đặt nếu bị xung đột( thay thế gói cài đặt cũ bằng cách xóa đi nó và cài gói mới hơn).
+
+#Thiết lập 2 card mạng trong ubuntu:
+Để thiết lập card mạng trong ubuntu server ta truy cập vào tập tin interfaces nằm trong đường dẫn /etc/network sau đó nhập mật khẩu
+![](https://cloud.githubusercontent.com/assets/14356333/10410265/48992d84-6f66-11e5-9c98-8fefea709307.jpg)
+
+Tiếp theo, cấu hình cho 2 card mạng eth0 và eth1 cùng một dải ip 192.168.1.0 ta gõ vào các thông số tương ứng address, network, netmask, broadcast, gateway.
+![](https://cloud.githubusercontent.com/assets/14356333/10410280/2009b55e-6f67-11e5-9c2a-5f58140f10e1.jpg)
+
+Sau khởi động lại mạng 
+![](https://cloud.githubusercontent.com/assets/14356333/10410299/0e1fc422-6f68-11e5-8da2-250ca4ec2990.jpg)
+
+
+
