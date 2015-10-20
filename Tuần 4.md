@@ -187,3 +187,23 @@ Cấp quyền thực thi cho file kma.sh bằng lệnh chmod
 
 Sau đó dùng lệnh ./tên file để chạy file.
 ![](https://cloud.githubusercontent.com/assets/14356333/10410450/4c946556-6f6c-11e5-9668-565a5ccfae52.jpg)
+
+#Tìm hiểu và cài đặt apache
+
+Apache hay là chương trình máy chủ HTTP là một chương trình dành cho máy chủ đối thoại qua giao thức HTTP. Apache chạy trên các hệ điều hành tương tự như Unix, Microsoft Windows, Novell Netware và các hệ điều hành khác. Apache đóng một vai trò quan trọng trong quá trình phát triển của mạng web thế giới (tiếng Anh: World Wide Web).
+
+Để cài đặt đầu tiên ta update các package
+
+![](https://cloud.githubusercontent.com/assets/14356333/10612595/a70ce942-777b-11e5-9dc5-8f281ea45e24.jpg)
+
+Sau đó ta tiến hành cài đặt apache
+
+![](https://cloud.githubusercontent.com/assets/14356333/10612705/28c219bc-777c-11e5-89fc-ac1e8ad8ad9a.jpg)
+
+Sau đó chúng ta khởi động apache
+
+![](https://cloud.githubusercontent.com/assets/14356333/10612806/9f3abfd6-777c-11e5-982a-2e4127a984e6.jpg)
+
+Test xem server đã chạy ổn định chưa
+
+![](https://cloud.githubusercontent.com/assets/14356333/10612872/f2049908-777c-11e5-9e4d-30c45f0ffea9.jpg)
