@@ -235,3 +235,26 @@ Bật virtual host và khởi động lại
 Sau đó chỉnh sửa file host để IP trỏ về trang web.
 
 ![](https://cloud.githubusercontent.com/assets/14356333/10564916/3c3ab466-75ee-11e5-87f4-68f16f098b76.jpg)
+
+#VI. Tối ưu hóa apache
+
+Dưới đây là bảng cấu hình chuẩn của Apache httpd.conf trong trường hợp một Average Server và lượng truy cập bình thường.
+
+
+TimeOut 300  
+
+KeepAlive On  
+
+MaxKeepAliveRequests 100  
+
+KeepAliveTimeout 15
+
+MaxClients 150
+
+MaxRequestsPerChild 0  
+
+MinSpareServers 5  
+
+MaxSpareServers 10  
+
+StartServers 5  
