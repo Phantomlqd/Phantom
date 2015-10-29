@@ -1,2 +1,2 @@
-#Triển khai DNS sử dụng BIND
-https://www.youtube.com/watch?v=DN2ysfQTLOg&feature=youtu.be
+#Triển khai DNS master and slave
+https://www.youtube.com/watch?v=UOkLmrWb27Y
