@@ -44,5 +44,6 @@ Mỗi dấu tab là sự ngăn cách giữa các cột, vị trí nào không c�
 
 ![](https://cloud.githubusercontent.com/assets/14356333/10989653/cb83dd9a-847c-11e5-84e7-f5247c22d137.jpg)
 
-
+#Xây dựng trang web bằng wordpress:
+https://www.youtube.com/watch?v=F05epVTn4wM&feature=youtu.be
 
