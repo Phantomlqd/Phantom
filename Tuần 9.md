@@ -1,4 +1,7 @@
 #1. Viết script cài đặt wordpress trên ubuntu server:
+    #!/bin/bash
+	read software;
+	apt-get install $software;
 Đầu tiên tạo 1 file có tên tùy ý, ở đây mình đặt là **install.sh**
 
 ![](https://cloud.githubusercontent.com/assets/14356333/11275584/da83cec4-8f10-11e5-95da-de50d2931cae.png)
