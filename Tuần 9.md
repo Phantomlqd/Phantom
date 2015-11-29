@@ -4,8 +4,8 @@
     sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password 113phantom'
     sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password 113phantom'
     sudo apt-get -y install mysql-server mysql-client
-    sudo apt-get install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache        php5-ming php5-ps php5-pspell php5-recode 
-    php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
+    sudo apt-get -y install php5 libapache2-mod-php5
+    sudo apt-get -y install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache     php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
     sudo mysql -u root -p113phantom << EOF
     CREATE DATABASE wordpress;
     CREATE USER phantom13@localhost IDENTIFIED BY '113phantom';
