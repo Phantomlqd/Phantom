@@ -1,7 +1,31 @@
 #1. Viết script cài đặt wordpress trên ubuntu server:
     #!/bin/bash
-	read software;
-	apt-get install $software;
+cd /home/userver2
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password password 113phantom'
+sudo debconf-set-selections <<< 'mysql-server mysql-server/root_password_again password 113phantom'
+sudo apt-get -y install mysql-server mysql-client
+sudo apt-get install php5-mysql php5-curl php5-gd php5-intl php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode 
+php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
+sudo mysql -u root -p113phantom << EOF
+CREATE DATABASE wordpress;
+CREATE USER phantom13@localhost IDENTIFIED BY '113phantom';
+GRANT ALL PRIVILEGES ON wordpress.* TO phantom13@localhost;
+FLUSH PRIVILEGES;
+exit
+EOF
+cd /var/www
+sudo wget wordpress.org/latest.tar.gz
+sudo tar xzvf latest.tar.gz
+cd wordpress
+sudo cp wp-config-sample.php wp-config.php
+sed -i 's/database_name_here/'wordpress'/g' /var/www/wordpress/wp-config.php
+sed -i 's/password_here/'113phantom'/g' /var/www/wordpress/wp-config.php
+sed -i 's/username_here/'phantom13'/g' /var/www/wordpress/wp-config.php
+sudo chown -R www-data:www-data /var/www/wordpress
+sudo mkdir /var/www/wordpress/wp-content/uploads -p
+sudo chown -R :www-data /var/www/wordpress/wp-content/uploads
+sudo service apache2 restart
+
 Đầu tiên tạo 1 file có tên tùy ý, ở đây mình đặt là **install.sh**
 
 ![](https://cloud.githubusercontent.com/assets/14356333/11275584/da83cec4-8f10-11e5-95da-de50d2931cae.png)
